@@ -106,9 +106,7 @@ hr.bannerBars{
 }
 .pictureOfMeDec {
   border-color: white;
-  border-width: 15px;
-  -moz-border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
-  border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+  border-width: 5px;
   border-style: solid;
   margin: auto;
 }
@@ -288,9 +286,12 @@ hr.bannerBars{
 }
 #Linkedin {
 		background-color: #0077B5;
+		position: relative;
 }
 #Behance {
 	background-color: #1769ff;
+	position: relative;
+
 }
 #Mail {
 	background-color: #c71610;
@@ -307,4 +308,11 @@ display: inline-block;
 .cent {
 	display: flex; 
 	justify-content: center;
+}
+.epost {
+	font-family: 'Josefin Sans';
+}
+.top {
+		top: 20px;
+
 }

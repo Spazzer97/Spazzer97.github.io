@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 	<head>
 	
 		<!-- Titel på hemsidan -->
@@ -12,7 +12,7 @@
 		<meta charset="UTF-8">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="Favicon1.png"/>
+		<link rel="icon" href="Favicon1.png" type="image/x-icon">
 	
 		<!-- Add-ons -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
 		</header>
 		
 		<footer>
-			<p class="lead"><i class="readable">Jag studerar för närvarande mitt sista år av en kandidatexamen i interaktionsdesign vid Stockholms universitet.</i></p>
+			<p class="lead"><i class="readable">Jag studerar för tilfället mitt sista år av en kandidatexamen i interaktionsdesign på Stockholms universitet.</i></p>
 			<p class="lead"><i class="readable">Annars frilansar jag inom UX-design samt webutveckling.</i></p>
 
 		<p class="lead">
@@ -113,7 +113,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lorem, solli
 		</header>
 		<footer>
 		<blockquote class="blockquote text-right">
-		  <p class="mb-0">People ignore design that ignores people.</p>
+		  <p class="mb-0"><i>People ignore design that ignores people.</i></p>
 		  <div class="blockquote-footer">Frank Chimero <cite title="Source Title">The shape of design</cite></div>
 		</blockquote>
 		</footer>
@@ -209,7 +209,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lorem, solli
                         <ul class="flex flex-wrap align-items-center">
                             <li><a>Deltagande design,</a></li>
                             <li><a>Warhammer</a></li>
-                            <li><a>Prototyp</a></li>
                         </ul>
                     </footer>
                 </div>
@@ -375,13 +374,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lorem, solli
 		<div class="cent">
 			<a href="https://se.linkedin.com/in/oscar-lysgren-691919148" target="_blank" id="Linkedin" class="fab fa-linkedin-in fa-2x fontCircle"></a>			
 			    <div class="divider"></div>
-			<a href="mailto:Oscar.Lysgren@hotmail.com" target="_top" id="Mail" class="fas fa-envelope fa-2x fontCircle"></a>
+			<a  href="mailto:Oscar.Lysgren@hotmail.com" target="_top" id="Mail" class="fas fa-envelope fa-2x fontCircle"></a>
 			    <div class="divider"></div>
 			<a href="https://www.behance.net/oscarlysgr1904" target="_blank" id="Behance" class="fab fa-behance fa-2x fontCircle"></a>
 
 		</div>
 	</div> 
-
+	
+	<div class="col-sm-12 top">
+		<blockquote class="blockquote text-center">
+		  <p class="mb-0 epost">Min e-post är Oscar.Lysgren@hotmail.com</p>
+		</blockquote>
+	</div>
+		
 </div>
 
 </div>
@@ -423,9 +428,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lorem, solli
         }
       }
     }, false);
-  </script>
 
-  <script>
   (new IntersectionObserver(function(e,o){
     if (e[0].intersectionRatio > 0){
         document.documentElement.removeAttribute('class');
@@ -433,6 +436,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc lorem, solli
         document.documentElement.setAttribute('class','stuck');
     };
 })).observe(document.querySelector('.trigger'));
+
   </script>
 
 </body>
