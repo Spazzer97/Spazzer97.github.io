@@ -1,1 +1,318 @@
-* { margin: 0; padding: 0; } body { background-color: #EEEEEE; } .stylish { font-family: 'Fugaz One', cursive; } stylish2 { font-family: "Comfortaa"; } .jumbotronSegments { background-color: #EEEEEE; padding-bottom: 0px; } /* Entry */ q::before { content: "/"; } @media (max-width: 767px) { .slashes { display: none; } } .entryPage { background-attachment: fixed; background-size: cover; background-position: 50% 50%; background: url(UX-BL.jpeg) center center / cover no-repeat; padding-bottom: 3.2%; border-radius: 0px; } .btn.cornered { flex: 1 1 auto; margin: 10px; padding: 18px 36px; text-align: center; transition: 1s; background-size: 200% auto; color: white; font-size: 16px; cursor: pointer; margin-top: 40px; background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%); } .btn.cornered:hover { background-position: right center; } .readable { background: white; padding: 4px 18px; opacity: 0.8; } /* Ändrande navbar*/ .sticky-top { transition: all 0.25s ease-in; } .stuck .sticky-top { background: linear-gradient(135deg, #556270, #FF6B6B); padding-top: 12px !important; padding-bottom: 12px !important; } /* Titel för sektioner och bars */ .banner { font-family: 'Comfortaa', cursive; padding-bottom: 10px; } hr.bannerBars{ background-color: #ff516a; opacity: 0.7; padding-bottom: 10px; height: 1px; } @media screen and (max-width: 768px) { .bannerBarsHide { visibility: hidden } } .left { -webkit-transform: skewX(20deg); -moz-transform: skewX(20deg); -ms-transform: skewX(20deg); transform: skewX(20deg); } .right { -webkit-transform: skewX(-20deg); -moz-transform: skewX(-20deg); -ms-transform: skewX(-20deg); transform: skewX(-20deg); } /* Om */ .pictureOfMe { display: inline-block; position: relative; left: 0; -moz-transform:rotate(-5deg); -webkit-transform:rotate(-5deg); -ms-transform:rotate(-5deg); transform:rotate(-5deg); } .pictureOfMeDec { border-color: white; border-width: 5px; border-style: solid; margin: auto; } .skillbar { display: block; width: 100%; margin-bottom: 25px; } .skillbarLast { margin-bottom: 0px } .skillbar-bar:before { background: #eee; content: ""; height: 3px; width: 100%; z-index: -1; } .skillbar-bar { height: 5px; width: 0px; background-color: #8EC3FF; opacity: 0.7; transition-property: width, background-color; } .skillbar-title { color: #323232; font-size: 11px; font-weight: 600; display: inline-block; font-family: "Comfortaa"; } .skill-bar-percent { float: right; display: inline-block; color: #323232; font-size: 11px; font-weight: 600; text-transform: uppercase; } /* Projekt */ .flex { display: flex; } .projekt-page { font-family: 'Poppins', sans-serif; } .projekt-page .projekt-content figure, .projekt-page .projekt-content .entry-content { width: 50%; } .projekt-page .projekt-content figure { margin: 0; overflow: hidden; } .projekt-page .projekt-content figure img { display: block; width: 100%; height: auto; } .projekt-page .projekt-content .entry-content { padding: 25px; } .projekt-page .projekt-content { transition: all 1s; } .projekt-page .projekt-content:hover { background: #ff516a; } .projekt-page .projekt-content header { width: 100%; } .projekt-page .projekt-content .entry-content h3 { position: relative; } .projekt-page .projekt-content .entry-content h3::before { content: ''; position: absolute; top: 7px; left: -40px ; z-index: 99; width: 30px; height: 30px; transform: rotate(45deg); background: #fff; } .entry-content h3 a { color: #191919; font-size: 1.125rem; font-weight: 500; } .entry-content h5 a { color: #595959; font-size: 1.125rem; font-weight: 500; } @media screen and (max-width: 756px) { .projekt-page .col-md-6:nth-of-type(even) .projekt-content { flex-flow: row-reverse !important; } .projekt-page .col-md-6:nth-of-type(even) .projekt-content .entry-content h3::before { right: -40px; left: auto; } } @media screen and (min-width: 600px) { .projekt-page .projekt-content.flex-row-reverse .entry-content h3::before { right: -50px; left: auto; } } /* Projekt TextStilisering */ .skapare { margin-top: 10px; color: #595959; font-size: 0.875rem; } .skapare a { margin-top: 10px; color: #595959; font-size: 0.875rem; } .utgivetDatum { position: relative; margin-right: 20px; color: #bfbfbf; font-size: 0.875rem; } .utgivetDatum::after { content: '/'; position: absolute; top: 0; right: -14px; } .projekt-top { top: 50px; } .projekt-page .projekt-content footer ul { padding: 0; margin: 0; list-style: none; } .projekt-page .projekt-content footer li { padding: 0 3px; font-size: 0.875rem; } .projekt-page .projekt-content footer li a { color: #f0437e; } .projekt-page .projekt-content:hover .skapare, .projekt-page .projekt-content:hover .utgivetDatum, .projekt-page .projekt-content:hover footer li a { color: #cbd1db; } /* Kontakt-page */ .kontakt-page { background-color: #c2c8d1; padding-bottom: 50px; } .fontCircle { height: 50px; width: 50px; line-height: 50px; -moz-border-radius: 30px; border-radius: 30px; color: white; text-align: center; padding: 0; border: none; background: none; } #Linkedin { background-color: #0077B5; position: relative; } #Behance { background-color: #1769ff; position: relative; } #Mail { background-color: #c71610; } .fontCircle:hover { background: #262626; color: grey; text-decoration: none } .divider{ margin-left: 15%; display: inline-block; } .cent { display: flex; justify-content: center; } .epost { font-family: 'Josefin Sans'; } .top { top: 20px; }
+body {
+	background-color: #EEEEEE;
+}
+.stylish {
+font-family: 'Fugaz One', cursive;
+}
+
+stylish2 {
+	font-family: "Comfortaa";
+}
+
+.jumbotronSegments {
+	background-color: #EEEEEE;
+	padding-bottom: 0px;
+}
+
+/* 		Entry		*/
+q::before { 
+  content: "/";
+}
+@media (max-width: 767px) 
+{
+    .slashes
+    {
+        display: none;
+    }
+}
+.entryPage {
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+background-image: url("UX-BL.png");
+padding-bottom: 3.2%;
+border-radius: 0px;
+}
+.btn.cornered {
+	flex: 1 1 auto;
+	margin: 10px;
+	padding: 18px 36px;
+	text-align: center;
+	transition: 1s;
+	background-size: 200% auto;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 40px;
+	background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+.btn.cornered:hover {
+	background-position: right center;
+}
+.readable {
+	background: white;
+	padding: 4px 18px;
+    opacity: 0.8;
+}
+
+/* Ändrande navbar*/
+.sticky-top {
+    transition: all 0.25s ease-in;
+}
+.stuck .sticky-top {
+	background: linear-gradient(135deg, #556270, #FF6B6B);
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+/*		Titel för sektioner och bars		*/
+.banner {
+font-family: 'Comfortaa', cursive;
+padding-bottom: 10px;
+}
+hr.bannerBars{
+	background-color: #ff516a;
+	opacity: 0.7;
+	padding-bottom: 10px;
+	height: 1px;
+}
+@media screen and (max-width: 768px) {
+    .bannerBarsHide {
+	visibility: hidden
+    }
+}
+.left {
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+}
+.right {
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+/*		Om		*/
+.pictureOfMe {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  -moz-transform:rotate(-5deg);
+  -webkit-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+.pictureOfMeDec {
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  margin: auto;
+}
+.skillbar {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.skillbarLast {
+	margin-bottom: 0px
+}
+.skillbar-bar:before {
+    background: #eee;
+    content: "";
+    height: 3px;
+    width: 100%;
+    z-index: -1;
+}
+.skillbar-bar {
+    height: 5px;
+    width: 0px;
+    background-color: #8EC3FF;
+	opacity: 0.7;
+    transition-property: width, background-color;
+}
+.skillbar-title {
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+	font-family: "Comfortaa";
+}
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*		Projekt		*/
+.flex {
+    display: flex;
+}
+.projekt-page {
+    font-family: 'Poppins', sans-serif;
+}
+.projekt-page .projekt-content figure,
+.projekt-page .projekt-content .entry-content {
+    width: 50%;
+}
+.projekt-page .projekt-content figure {
+    margin: 0;
+    overflow: hidden;
+}
+.projekt-page .projekt-content figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.projekt-page .projekt-content .entry-content {
+    padding: 25px;
+}
+.projekt-page .projekt-content {
+    transition: all 1s;
+}
+.projekt-page .projekt-content:hover {
+    background: #ff516a; 
+}
+.projekt-page .projekt-content header {
+    width: 100%;
+}
+.projekt-page .projekt-content .entry-content h3 {
+    position: relative;
+}
+.projekt-page .projekt-content .entry-content h3::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -40px ;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: #fff;
+}
+.entry-content h3 a {
+    color: #191919;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.entry-content h5 a {
+    color: #595959;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 756px) {
+    .projekt-page .col-md-6:nth-of-type(even) .projekt-content {
+        flex-flow: row-reverse !important;
+    }
+    .projekt-page .col-md-6:nth-of-type(even) .projekt-content .entry-content h3::before {
+        right: -40px;
+        left: auto;
+    }
+}
+@media screen and (min-width: 600px) {
+    .projekt-page .projekt-content.flex-row-reverse .entry-content h3::before {
+        right: -50px;
+        left: auto;
+    }
+}
+
+/*	Projekt TextStilisering		*/
+.skapare {
+    margin-top: 10px;
+    color: #595959;
+    font-size: 0.875rem;
+}
+.skapare a {
+    margin-top: 10px;
+    color: #595959;
+    font-size: 0.875rem;
+}
+.utgivetDatum {
+    position: relative;
+    margin-right: 20px;
+    color: #bfbfbf;
+    font-size: 0.875rem;
+}
+.utgivetDatum::after {
+    content: '/';
+    position: absolute;
+    top: 0;
+    right: -14px;
+}
+
+.projekt-top {
+	top: 50px;
+}
+
+.projekt-page .projekt-content footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.projekt-page .projekt-content footer li {
+    padding: 0 3px;
+    font-size: 0.875rem;
+}
+.projekt-page .projekt-content footer li a {
+    color: #f0437e;
+}
+.projekt-page .projekt-content:hover .skapare,
+.projekt-page .projekt-content:hover .utgivetDatum,
+.projekt-page .projekt-content:hover footer li a {
+    color: #cbd1db;
+
+}
+
+/* 		Kontakt-page	*/
+.kontakt-page {
+	background-color: #c2c8d1;
+	padding-bottom: 50px;
+	}
+.fontCircle {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: white;
+	text-align: center;
+	padding: 0;
+	border: none;
+	background: none;
+}
+#Linkedin {
+		background-color: #0077B5;
+		position: relative;
+}
+#Behance {
+	background-color: #1769ff;
+	position: relative;
+
+}
+#Mail {
+	background-color: #c71610;
+}
+.fontCircle:hover {
+    background: #262626;
+    color: grey;
+	text-decoration: none
+}
+.divider{
+margin-left: 15%;
+display: inline-block;
+}
+.cent {
+	display: flex; 
+	justify-content: center;
+}
+.epost {
+	font-family: 'Josefin Sans';
+}
+.top {
+		top: 20px;
+
+}
